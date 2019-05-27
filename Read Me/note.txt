@@ -1,0 +1,19 @@
+## This is testted in ubuntu 18.04 and server(with a bit problem though)
+
+## First migrate and seed.
+
+## To run in ubuntu please insert crontab -e in terminal and edit crontab file add the below line in last-
+* * * * * php /opt/lampp/htdocs/Scheduling_With_CronJob/artisan schedule:run >> /dev/null 2>&1
+
+## In server cron add 
+/usr/local/bin/ea-php72 /home/shikhaonet/shikhao_data/artisan schedule:run >> /dev/null 2>&1
+or
+/usr/local/bin/ea-php72 -q /home/shikhaonet/shikhao_data/artisan schedule:run >> /dev/null 2>&1
+
+added this line in cron 
+
+##jquery cdn is used .. so without internet ajax is not gonna work.
+
+
+
+
